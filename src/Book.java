@@ -21,22 +21,22 @@ public class Book{
         quantity++;
     }
 
-    public void addRating(int rating) {
-        if (rating >= 1 && rating <= 5) {
+    public void addRating(int rating){
+        if(rating>=1 && rating <= 5){
             ratings.add(rating);
-        } else {
+        }else{
             System.out.println("Rating must be between 1 and 5.");
         }
     }
 
-    public double getAverageRating() {
+    public double getAverageRating(){
         if (ratings.isEmpty()) return 0.0;
 
-        int sum = 0;
-        for (int r : ratings) sum += r;
-        return (double) sum / ratings.size();
+        int sum=0;
+        for(int r:ratings) sum+=r;
+        return (double) sum/ratings.size();
     }
-    public String getTitle() {
+    public String getTitle(){
         return title;
     }
     public String toString(){
