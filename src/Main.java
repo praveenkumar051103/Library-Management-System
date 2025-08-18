@@ -17,7 +17,7 @@ public class Main{
             System.out.println("10. Exit");
             System.out.print("Enter your choice: ");
             int choice=sc.nextInt();
-            sc.nextLine(); // consume newline
+            sc.nextLine();
 
             switch(choice){
                 case 1:
@@ -50,9 +50,9 @@ public class Main{
                     break;
                 case 5:
                     System.out.print("Enter Book ID to rate: ");
-                    int rateId = sc.nextInt();
+                    int rateId=sc.nextInt();
                     System.out.print("Enter your rating (1 to 5): ");
-                    int rating = sc.nextInt();
+                    int rating=sc.nextInt();
                     library.rateBook(rateId, rating);
                     break;
                 case 6:
@@ -63,12 +63,12 @@ public class Main{
                     break;
                 case 8:
                     System.out.print("Enter Book ID to check reservations: ");
-                    int resId = sc.nextInt();
+                    int resId=sc.nextInt();
                     library.showReservationsForBook(resId);
                     break;
                 case 9:
                     System.out.print("Enter Book ID to view rating: ");
-                    int rid = sc.nextInt();
+                    int rid=c.nextInt();
                     library.showBookRating(rid);
                     break;
 
